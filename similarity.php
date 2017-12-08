@@ -31,9 +31,6 @@ class Similarity {
   static public function cosine($a, $b) {
     ksort($a);
     ksort($b);
-    var_dump(self::dot_product($a, $b));
-    var_dump(self::magnitude($a));
-    var_dump(self::magnitude($b));
     return self::dot_product($a, $b) / (self::magnitude($a) * self::magnitude($b));
   }
 }
